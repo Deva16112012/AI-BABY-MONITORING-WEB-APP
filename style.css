@@ -1,0 +1,31 @@
+
+.h
+{
+font-size: 23px;
+width: 100%;
+margin: 0px;
+}
+
+#status
+{
+font-size: 18px;
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+canvas{
+    border: 4px dotted burlywood;
+    border-radius: 40px;
+    animation-name:x;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes x{
+    from{
+        box-shadow: 4px 4px 40px rgb(0, 255, 229);
+    }
+    to{
+      box-shadow: 4px 4px 40px rgb(164, 0, 85);
+    }
+}
