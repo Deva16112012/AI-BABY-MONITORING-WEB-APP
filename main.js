@@ -22,13 +22,13 @@ function draw(){
         for(i=0;i<object.length;i++){
             if(object == person){
                 document.getElementById("j").innerHTML="Baby found";
+                document.getElementById("v").innerHTML="Status : Object Detected";
                 alert1.stop();
             }
             else{
                 document.getElementById("j").innerHTML="Baby not found";
                 alert1.play();
             }
-            document.getElementById("v").innerHTML="Status : Object Detected";
             z=floor(object[i].confidence*100);
             text(object[i].label+" "+z+"%",object[i].x,object[i].y);
             fill(red,green,blue);
